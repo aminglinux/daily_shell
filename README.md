@@ -20,4 +20,6 @@
 
                 关注我，让我们一起成长为技术大牛！
 
-我的微信号：lishiming2009  我的公众号/视频号： 阿铭linux   B站：aminglinux
+微信号: lishiming2009  
+公众号/视频号: 阿铭linux   
+B站: aminglinux
