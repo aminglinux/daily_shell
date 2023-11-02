@@ -19,6 +19,12 @@ COMMENT
 # version: v1
 # date: 2023-11-3
 
+if [ $# -ne 1 ]
+then
+    echo "参数个数只能是1"
+fi
+
+
 ##先给sum赋值0
 sum=0
 
