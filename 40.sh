@@ -29,7 +29,7 @@ fi
 sum=0
 
 ## 遍历文件每一行
-cat $1 |while read line
+while read line
 do
     ## 将该行所有非数字字符删除，剩下数字，再计算有几个数字
     line_n=`echo $line|sed 's/[^0-9]//g'|wc -L`
@@ -37,5 +37,5 @@ do
 
     ## sum的值为sum+line_n
     sum=$[$sum+$line_n]
-done 
+done  < $1
 echo "sum:$sum"
