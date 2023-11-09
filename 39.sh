@@ -26,7 +26,7 @@ logdir=/data/log
 [ -f $dir/$t.log ] && rm -f $dir/$t.log
 
 ## 当小时为0或者12时
-if [ $t == "00" -o $t == "12" ]
+if [ $t1 == "00" -o $t1 == "12" ]
 then
     ## 遍历所有文件
     for f in `find $logdir/ -type f`
