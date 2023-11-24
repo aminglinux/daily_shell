@@ -1,9 +1,10 @@
-Prompt:
+### Prompt:
  需求：写一个shell脚本，遍历/data/目录下的txt文件，需要考虑到该目录下所有子目录下的文件，将这些txt文件做一个备份，备份的文件名增加一个年月日的后缀，比如将aming.txt备份为aming.txt_20231001，备份的文件就放到和txt文件同一级别目录下即可。
 
-ChatGPT:
+### ChatGPT:
 编写一个Shell脚本来完成你的需求，这个脚本将遍历/data/目录及其所有子目录下的.txt文件，并将它们备份到同一目录下，文件名加上年月日后缀。这里是一个可能的实现：
 
+```
 #!/bin/bash
 
 # 设置备份日期格式，例如 20231001
@@ -17,7 +18,7 @@ find /data/ -type f -name "*.txt" | while read file; do
     # 复制文件到新的备份文件
     cp "$file" "$backup_file"
 done
-
+```
 
 这个脚本的工作流程如下：
 
